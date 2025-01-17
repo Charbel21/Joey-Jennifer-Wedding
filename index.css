@@ -1,0 +1,379 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    aspect-ratio: 9/16;
+    
+  }
+
+  .video-container {
+    position: fixed;
+   height: 100%;
+    width: 30%;
+    /* width: 375px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 35%;
+    top: 0;
+    z-index: -1;
+   
+    
+  }
+
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+  }
+
+.space-wrapper{
+    height: 50vh;
+}
+ 
+
+  .invitation {
+    /* width: 295px; */
+    width: 30%;
+    /* max-width: 500px; */
+    background: white;
+    /* padding: 40px; */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding-bottom: 10px;
+    top: 10%;
+    left: 35%;
+    transform: translateX(-50%,-50%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 200px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  /* Decorative top line using ::before */
+  .invitation::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40px;
+    background: url('video/imgframe-btm.svg') no-repeat center/cover; 
+   
+  }
+
+  /* Decorative bottom line using ::after */
+  .invitation::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40px;
+    background: url("video/imgframe-top.svg") no-repeat center/cover;
+  }
+
+  /* Header Section */
+  .invitation h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    font-weight: normal;
+  }
+
+  .invitation p.subtitle {
+    margin: 0;
+    font-size:18px;
+    /* color: #888; */
+    font-weight: bold;
+  }
+
+  /* Quote Section */
+  .quote {
+    margin: 20px 0 0 0;
+    font-style: italic;
+    color: #555;
+    position: relative;
+  }
+
+  .joyous-hearts{
+    font-size: 22px;
+  }
+
+  .quote::before
+  {
+    content: '❝';
+    font-size: 28px;
+    color:black;
+    line-height: 18px;
+    display: block;
+    /* position: absolute; */
+  }
+
+  .quote::before {
+    top:-5px;
+    left: -10px;
+  }
+
+  .quote p{
+    font-size:20px ;
+  }
+  
+
+  .quote small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* Invitation Text */
+  .details {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    
+  }
+
+  #venue-location{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .photo-frame{
+     /* width: 295px; */
+     width: 30%;
+     /* max-width: 500px; */
+     
+     
+
+     /* padding: 40px; */
+   
+     position: relative;
+     
+     /* gap: 20px; */
+    
+     top: 10%;
+     left: 35%;
+     transform: translateX(-50%,-50%);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+     /* margin-bottom: 200px; */
+     /* display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; */
+  }
+
+  .photo-frame::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40px;
+    background: url('video/imgframe-top.svg') no-repeat center/cover; 
+   
+  }
+
+  /* Decorative bottom line using ::after */
+  .photo-frame::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 40px;
+    background: url("video/imgframe-btm.svg") no-repeat center/cover;
+  }
+
+  .photo-frame img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .details strong {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #wedding-ceremony{
+    font-family: "Dancing Script", serif;
+  }
+
+
+  #wedding-ceremony-details{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: larger;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #Gift-Registry{
+    font-family: "Dancing Script", serif;
+    
+  }
+
+  .gift-registry-text{
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .whish-money{
+font-size: 22px;
+  }
+
+  #be-our-guest-title{
+    font-family: "Dancing Script", serif;
+    font-weight: 600;
+  }
+
+  .reply-paragraph{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  #form{
+    /* display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* padding: 0; */
+  }
+
+  .form-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+
+ #full_name{
+
+    font-family: "Cormorant Garamond", serif;
+    background: rgba(232, 232, 232, 0.4);
+
+    width: 90%;
+    height: 45px;
+    text-align: center;
+ }
+
+ #guests{
+    font-family: "Cormorant Garamond", serif;
+    background: rgba(232, 232, 232, 0.4);
+    width: 94%;
+    height: 45px;
+    text-align: center;
+ }
+
+ label{
+    font-family: "Cormorant Garamond", serif;
+
+ }
+
+ #submit_rsvp{
+    background-color: white;
+    text-align: center;
+    height: 45px;
+    border: 1px solid black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    width: 86%;
+ }
+
+    
+ .formNote{
+    font-family: "Cormorant Garamond", serif;
+
+ }
+
+ h3{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: normal;
+    font-family: "Dancing Script", serif;
+
+ }
+
+ .details-paragraph{
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+
+ }
+
+
+
+  @media screen and (min-width:350px) and (max-width:768px) {
+
+
+   
+
+    .video-container{
+    width: 100%;
+      left: 0%;
+        
+        
+
+    }
+
+    .invitation{
+       width: 100%;
+       left: 0%;
+      padding-left: 0px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+
+    .quote::before{
+        left:-15px;
+        top: 10px;
+    }
+
+    .quote::after{
+        bottom: -5px;
+        right: 150px;
+    }
+
+    .details{
+        margin-top: 0;
+    }
+
+    .photo-frame{
+      width: 100%;
+      left: 0;
+    }
+    
+    .photo-frame::after{
+      bottom: -20px;
+      height: 110px;
+    }
+
+  }
